@@ -1,0 +1,35 @@
+h1{
+    text-align: center; 
+    border-bottom: solid 5px #5d627b;
+}
+#textbox{
+    background-color: #e0e0e0;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    margin-right:  5%;
+    margin-left: 5%;
+}
+p {
+    color: black
+}
+#periodic-table{
+    background-color: #e0e0e0;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right:  5%;
+    margin-left: 5%;
+}
+table{
+    margin: auto;
+    border: solid 3px black;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+}
+th{
+    font-size: xx-large;
+}
+#tr1{
+    border-bottom: solid 3px black;
+}
