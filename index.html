@@ -9,12 +9,12 @@
     <body>
         <h1>SCIENTGRAM</h1>
         <div id="textbox">
-            <p>s説明</p>
+            <p>説明</p>
         </div>
         <div id="periodic-table">
-            <table>
+            <table id="hoge">
                 <tr id="tr1">
-                    <th>周期/族</th>
+                    <th></th>
                     <th>1</th>
                     <th>2</th>
                     <th>3</th>
@@ -35,41 +35,41 @@
                     <th>18</th>
                 </tr>
             <tr>
-                <th>1</th>
+                <th id="th1">1</th>
                 <th id="h"></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
                 <th id="he"></th>
 
             </tr>
             <tr>
-                <th>2</th>
+                <th id="th1">2</th>
                 <th id="li"></th>
                 <th id="be"></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
                 <th id="b"></th>
                 <th id="c"></th>
                 <th id="n"></th>
@@ -78,19 +78,19 @@
                 <th id="ne"></th>
             </tr>
             <tr>
-                <th>3</th>
+                <th id="th1">3</th>
                 <th id="na"></th>
                 <th id="mg"></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
+                <th id="none"></th>
                 <th id="al"></th>
                 <th id="si"></th>
                 <th id="p"></th>
@@ -99,28 +99,29 @@
                 <th id="ar"></th>
             </tr>
             <tr>
-                <th>4</th>
+                <th id="th1">4</th>
                 <th id="k"></th>
                 <th id="ca"></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
-                <th id=""></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
+                <th id="disable"></th>
             </tr>
         </table>
-        <button type="button" onclick="ShowAtoms()">表示</button>
+        <button type="button" onclick="ShowAtoms()" id="show">表示</button>
+        <button type="button" onclick="DeleteAtoms()" id="delete" disabled>削除</button>
         </div>
     </body>
 </html>

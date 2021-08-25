@@ -25,8 +25,25 @@ table{
     margin: auto;
     border: solid 3px black;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-
+    table-layout: fixed;
+    width: 90%; 
+    background-color: #e0e0e0;
+}
+#tr1 {
+    background-color: #5d627b;
+    color: white;
+}
+#th1 {
+    background-color: #5d627b;
+    color: white;
 }
 th{
-    font-size: xx-large;
+    font-size: 2vw;
 }
+#none {
+    background-color: white;
+}
+#disable {
+    background-color: #5d627b;
+}
+
