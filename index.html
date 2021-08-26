@@ -11,7 +11,10 @@
         <div id="textbox">
             <p>説明</p>
         </div>
+        
         <div id="periodic-table">
+            <button type="button" onclick="ShowAtoms()" id="show">はじめる</button>
+            <button type="button" onclick="DeleteAtoms()" id="delete" disabled>やり直し</button>
             <table id="hoge">
                 <tr id="tr1">
                     <th></th>
@@ -120,8 +123,13 @@
                 <th id="disable"></th>
             </tr>
         </table>
-        <button type="button" onclick="ShowAtoms()" id="show">表示</button>
-        <button type="button" onclick="DeleteAtoms()" id="delete" disabled>削除</button>
+        
+        <form action="" method="POST">
+            <p>答え<br>
+            <input type="text" id="answer"></p>
+            <button type="button" onclick="PostAnswer()">Click Me♡</button>
+        </form>
+        <h2 id="current"></h2>
         </div>
     </body>
 </html>
