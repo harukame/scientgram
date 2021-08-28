@@ -14,7 +14,8 @@
         
         <div id="periodic-table">
             <button type="button" onclick="ShowAtoms()" id="show">はじめる</button>
-            <button type="button" onclick="DeleteAtoms()" id="delete" disabled>やり直し</button>
+    <button type="button" onclick="ShowAtomsHard()" id="show-hard">はじめる(ハードモード)</button>
+    <button type="button" onclick="DeleteAtoms()" id="delete" disabled>やり直し</button>
             <table id="hoge">
                 <tr id="tr1">
                     <th></th>
@@ -123,13 +124,17 @@
                 <th id="disable"></th>
             </tr>
         </table>
-        
-        <form action="" method="POST">
+
+        <form action="" method="POST"  onsubmit="return PostAnswer()" id="form" autocomplete="off">
             <p>答え<br>
-            <input type="text" id="answer"></p>
-            <button type="button" onclick="PostAnswer()">Click Me♡</button>
+            <input type="text" id="answer" value=""></p>
+            <button type="button" onclick="PostAnswer()">送信</button>
         </form>
-        <h2 id="current"></h2>
+    <div id="result-table">
+        <h2 id="congratulation"></h2>
+        <p id="result"></p>
+    </div>
+    
         </div>
     </body>
 </html>
