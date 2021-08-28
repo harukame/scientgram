@@ -9,16 +9,7 @@
     </head>
     <body>
         <h1>SCIENTGRAM</h1>
-        <div id="textbox">
-            <p>このゲームは、周期表のHからCaまでの穴埋め形式のゲームです。</p>
-           
-            <P>・まず、初めに数個空白になった状態の周期表を埋めていくイージーモードでプレイするときは「はじめる」をクリックしてください。<br>すべて空白の状態で周期表を埋めるハードモードをプレイするときは「はじめる（ハードモード）」をクリックしてください。
-            <p>・次に、赤く光ってる所を埋めていきます。答えの欄に答えを入れてEnterを押すか送信ボタンを押すかします。そうしたら、次の欄に移動しますので同じようにうめていきます。
-            <p>・そうして、すべて埋めて周期表を完成させたらクリアです。もう一度したいときは、「やり直し」をクリックするともう一度はじめからできます。
-            <p>・間違えたときは、Enterを押してください。
-            <p>・間違えた回数を０回になるように頑張ってください。</p>
 
-        </div>
         
         <div id="periodic-table">
             <button type="button" onclick="ShowAtoms()" id="show">はじめる</button>
@@ -132,17 +123,28 @@
                 <th id="disable"></th>
             </tr>
         </table>
-
-        <form action="" method="POST" onsubmit="return PostAnswer()" id="form" autocomplete="off">
-            <p>答え<br>
-                <input type="text" id="answer" value="">
-            </p>
-            <button type="button" onclick="PostAnswer()">送信</button>
-        </form>
         <div id="result-table">
             <h2 id="congratulation"></h2>
             <p id="result"></p>
+            <p id="perfect"></p>
         </div>
+        <form action="" method="POST" onsubmit="return PostAnswer()" id="form" autocomplete="off">
+            <p>答え<br>
+                <input type="text" id="answer" value="" placeholder="大文字でも小文字でもOK">
+            </p>
+            <button type="button" onclick="PostAnswer()">送信</button>
+        </form>
+
+
+    </div>
+    <div id="textbox">
+        <p>このゲームは、周期表のHからCaまでの穴埋め形式のゲームです。</p>
+       
+        <P>・最初からいくつか書き込まれている状態の周期表を埋めていくイージーモードでプレイするときは「はじめる」をクリックしてください。<br>すべて空白の状態から周期表を埋めていくハードモードをプレイするときは「はじめる（ハードモード）」をクリックしてください。
+        <p>・ゲームが始まると、答えるべき元素の場所が順番に赤くなっていきます。答えの欄に正解を入力し、Enterキーを押すか送信ボタンをクリックします。そうすると、次の欄が赤くなるので同じように解答していきます。
+        <p>・周期表を完成させたらクリアです。もう一度したいときは、「やり直し」をクリックするとはじめからできます。
+        <p>・間違えると「違います」と表示されます。
+        <p>・クリア時に表示される間違えた回数が0回になるように頑張ってください。</p>
 
     </div>
 </body>

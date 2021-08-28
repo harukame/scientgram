@@ -56,3 +56,9 @@ button{
 form{
     text-align: center;
 }
+#answer{
+    width: 90%;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}

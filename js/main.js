@@ -79,6 +79,9 @@ function PostAnswer() {
             if (count === notShownAtoms.length) {
                 document.getElementById("congratulation").textContent = "クリアおめでとう！";
                 document.getElementById("result").textContent = String("間違えた回数:" + String(mistake) + "回");
+                if(mistake === 0){
+                    document.getElementById("perfect").textContent = "パーフェクト！"                 
+                }
                 return false;
             }
             else {
