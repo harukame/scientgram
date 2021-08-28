@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" >
@@ -16,13 +17,7 @@
             <p>・そうして、すべて埋めて周期表を完成させたらクリアです。もう一度したいときは、「やり直し」をクリックするともう一度はじめからできます。
             <p>・間違えたときは、Enterを押してください。
             <p>・間違えた回数を０回になるように頑張ってください。</p>
-            </p>
-            </p>
 
-            </p>
-            </p>
-
-            </P>
         </div>
         
         <div id="periodic-table">
@@ -138,17 +133,18 @@
             </tr>
         </table>
 
-        <form action="" method="POST"  onsubmit="return PostAnswer()" id="form" autocomplete="off">
+        <form action="" method="POST" onsubmit="return PostAnswer()" id="form" autocomplete="off">
             <p>答え<br>
-            <input type="text" id="answer" value=""></p>
+                <input type="text" id="answer" value="">
+            </p>
             <button type="button" onclick="PostAnswer()">送信</button>
         </form>
-    <div id="result-table">
-        <h2 id="congratulation"></h2>
-        <p id="result"></p>
-    </div>
-    
+        <div id="result-table">
+            <h2 id="congratulation"></h2>
+            <p id="result"></p>
         </div>
-    </body>
-</html>
 
+    </div>
+</body>
+
+</html>
