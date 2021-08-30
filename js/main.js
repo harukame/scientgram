@@ -59,6 +59,7 @@ function DeleteAtoms() {
     }
     document.getElementById("congratulation").textContent = "";
     document.getElementById("result").textContent = "";
+    document.getElementById("perfect").textContent = "";
     document.getElementById("show").disabled = false;
     document.getElementById("show-hard").disabled = false;
     document.getElementById("delete").disabled = true;
